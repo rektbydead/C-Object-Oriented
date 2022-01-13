@@ -14,8 +14,10 @@ void main(int argc, char *argv) {
     Territorio* m = (Territorio*) new_Montanha();
     printf("Ouro montanha: %d \n", m->getProdOuro((TTerritorio)m, turno));
     printf("Produto montanha: %d \n", m->getProdProduto((TTerritorio)m, turno));
+    free(m);
 
     Territorio* p = (Territorio*) new_Planicie();
     printf("Ouro planicie: %d \n",p->getProdOuro((TTerritorio)p, turno));
     printf("Produto planicie: %d \n",p->getProdProduto((TTerritorio)p, turno));
+    free(p);
 }
